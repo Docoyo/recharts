@@ -1,6 +1,7 @@
 /**
  * @fileOverview Y Axis
  */
+import { ReactElement } from 'react';
 import { BaseAxisProps, AxisInterval } from '../util/types';
 
 export interface Props extends BaseAxisProps {
@@ -25,6 +26,7 @@ export interface Props extends BaseAxisProps {
   minTickGap?: number;
   interval?: AxisInterval;
   reversed?: boolean;
+  children?: ReactElement | ReactElement[];
 }
 
 function YAxis(props: Props): any {
