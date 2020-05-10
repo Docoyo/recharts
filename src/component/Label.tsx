@@ -31,6 +31,7 @@ interface LabelProps {
   viewBox?: ViewBox;
   formatter?: Function;
   value?: number | string;
+  angle?: number;
   offset?: number;
   position?:
     | 'top'

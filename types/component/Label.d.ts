@@ -21,6 +21,7 @@ interface LabelProps {
     viewBox?: ViewBox;
     formatter?: Function;
     value?: number | string;
+    angle?: number;
     offset?: number;
     position?: 'top' | 'left' | 'right' | 'bottom' | 'inside' | 'outside' | 'insideLeft' | 'insideRight' | 'insideTop' | 'insideBottom' | 'insideTopLeft' | 'insideBottomLeft' | 'insideTopRight' | 'insideBottomRight' | 'insideStart' | 'insideEnd' | 'end' | 'center' | 'centerTop' | 'centerBottom' | {
         x?: number;
