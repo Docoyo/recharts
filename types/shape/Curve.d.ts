@@ -1,7 +1,7 @@
 import { PureComponent } from 'react';
-import { CurveFactory } from 'd3-shape';
+import type { CurveFactory } from 'd3-shape';
 import { LayoutType, PresentationAttributesWithProps } from '../util/types';
-export declare type CurveType = 'basis' | 'basisClosed' | 'basisOpen' | 'linear' | 'linearClosed' | 'natural' | 'monotoneX' | 'monotoneY' | 'monotone' | 'step' | 'stepBefore' | 'stepAfter' | CurveFactory;
+export declare type CurveType = 'basis' | 'basisClosed' | 'basisOpen' | 'linear' | 'linearClosed' | 'natural' | 'monotoneX' | 'monotoneY' | 'monotone' | 'step' | 'stepBefore' | 'stepAfter' | typeof CurveFactory;
 export interface Point {
     x: number;
     y: number;

@@ -1,5 +1,5 @@
 import { PureComponent } from 'react';
-import { SymbolType as D3SymbolType } from 'd3-shape';
+import type { SymbolType as D3SymbolType } from 'd3-shape';
 import { PresentationAttributes, SymbolType } from '../util/types';
 declare type SizeType = 'area' | 'diameter';
 interface SymbolsProp {
@@ -17,7 +17,7 @@ declare class Symbols extends PureComponent<Props> {
         size: number;
         sizeType: string;
     };
-    static registerSymbol: (key: string, factory: D3SymbolType) => void;
+    static registerSymbol: (key: string, factory: typeof D3SymbolType) => void;
     getPath(): string;
     render(): JSX.Element;
 }
