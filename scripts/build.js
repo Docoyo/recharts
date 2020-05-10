@@ -12,7 +12,6 @@ function exec(command) {
   execSync(command, { stdio: [0, 1, 2] });
 }
 
-exec('npm run clean');
 exec('npm run build');
 // exec('npm run build-umd');
 // exec('npm run build-min');
