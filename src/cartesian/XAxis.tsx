@@ -1,6 +1,7 @@
 /**
  * @fileOverview X Axis
  */
+import { ReactElement } from 'react';
 import { BaseAxisProps, AxisInterval } from '../util/types';
 
 /** Define of XAxis props */
@@ -23,6 +24,7 @@ export interface Props extends BaseAxisProps {
   minTickGap?: number;
   interval?: AxisInterval;
   reversed?: boolean;
+  children?: ReactElement | ReactElement[];
 }
 function XAxis(props: Props): any {
   return null;
@@ -44,7 +46,7 @@ XAxis.defaultProps = {
   allowDataOverflow: false,
   scale: 'auto',
   reversed: false,
-  allowDuplicatedCategory: true,
+  allowDuplicatedCategory: true
 };
 
 export default XAxis;
