@@ -1,4 +1,5 @@
 /// <reference types="react" />
+import {​​​​​​​ ReactElement }​​​​​​​ from 'react';
 import { BaseAxisProps, AxisInterval } from '../util/types';
 export interface Props extends BaseAxisProps {
     xAxisId?: string | number;
@@ -14,6 +15,7 @@ export interface Props extends BaseAxisProps {
     minTickGap?: number;
     interval?: AxisInterval;
     reversed?: boolean;
+    children?: ReactElement | ReactElement[];
 }
 declare function XAxis(props: Props): any;
 declare namespace XAxis {
